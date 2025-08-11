@@ -1,0 +1,21 @@
+@import "./mixins/class";
+@import "./mixins/mixins";
+@import "./mixins/breakpoints";
+@import "_variables";
+
+a {
+    text-decoration: unset;
+}
+
+@import "product";
+@import "layout";
+@import "navigator";
+@import "card";
+@import "custom";
+@import "blog";
+@import "footer";
+@import "home";
+@import "my-purchase";
+@import "auth";
+
+@import "../css/style.css";

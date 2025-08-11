@@ -1,0 +1,71 @@
+.private-layout {
+    margin: 120px 0;
+    position: relative;
+    overflow: hidden;
+
+    .private-layout-body {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+
+    .wrap-panel {
+        display: block;
+        margin-right: 20px;
+        padding-top: 40px;
+        background-color: #eef1f6;
+        border-radius: 5px;
+
+        .menu-list {
+            .menu-item {
+                display: flex;
+                align-items: center;
+                padding: 10px 50px 10px 40px;
+                img {
+                    filter: invert(0%) brightness(100%);
+                    transition: filter 0.3s ease-in-out;
+                    width: 24px;
+                }
+                .name {
+                    color: #000000;
+                    font-size: 16px;
+                }
+                &.active {
+                    background-color: #0075ed;
+                    .name {
+                        background-color: #0075ed !important;
+                    }
+                    img {
+                        filter: invert(100%) brightness(200%);
+                    }
+                }
+                &:hover {
+                    background-color: #0075ed !important;
+                }
+            }
+        }
+        @include media-down(lg) {
+            display: none;
+        }
+    }
+
+    .app-content {
+        width: 100%;
+        flex: 1;
+        color: #000000;
+        .form-profile {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .input-group {
+            .end-icon-style {
+                position: absolute;
+                right: 0;
+                text-align: center;
+                margin-right: 12px;
+                margin-top: 5px;
+            }
+        }
+    }
+
+}

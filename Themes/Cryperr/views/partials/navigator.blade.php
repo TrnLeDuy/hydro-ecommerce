@@ -1,0 +1,32 @@
+<div class="navigator">
+    <div class="navigator-list">
+        {{-- <a class="navigator-item {{ Route::currentRouteName() =='fe.wallet.wallet.list' ?'active':"" }} " href="{{route('fe.wallet.wallet.list')}}">
+            <img width="24px" height="24px" src="{{ Theme::url('images/navigator/wallet.png') }}" alt="">
+            <div class="label">Wallet</div>
+        </a>
+        <a class="navigator-item {{ Route::currentRouteName() =='fe.wallet.wallet.convert' ?'active':"" }}" href="{{route('fe.wallet.wallet.convert')}}">
+            <img width="24px" height="24px" src="{{ Theme::url('images/menu/convert.png') }}" alt="">
+            <div class="label">Convert</div>
+        </a>
+        <a class="navigator-item {{ Route::currentRouteName() =='fe.staking.staking.mystaking' ?'active':"" }}" href="{{route('fe.staking.staking.mystaking')}}">
+            <img width="24px" height="24px" src="{{ Theme::url('images/navigator/staking.png') }}" alt="">
+            <div class="label">Staking</div>
+        </a> --}}
+        <a class="navigator-item {{ Route::currentRouteName() =='fe.customer.customer.account' ?'active':"" }}" href="{{route('fe.customer.customer.account')}}">
+            <img width="24px" height="24px" src="{{ Theme::url('images/navigator/account.png') }}" alt="">
+            <div class="label">{{ __('menu.account') }}</div>
+        </a>
+        <a class="navigator-item {{ Route::currentRouteName() =='fe.shoppingcart.myPurchase' ?'active':"" }}" href="{{route('fe.shoppingcart.myPurchase')}}">
+            <img width="24px" height="24px" src="{{ Theme::url('images/menu/prostore.png') }}" alt="">
+            <div class="label">{{ __('menu.history') }}</div>
+        </a>
+        {{-- <a class="navigator-item {{ Route::currentRouteName() =='fe.customer.customer.affiliate' ?'active':"" }}" href="{{route('fe.customer.customer.affiliate')}}">
+            <img width="24px" height="24px" src="{{ Theme::url('images/navigator/icon-affiliate.png') }}" alt="">
+            <div class="label">Affiliate</div>
+        </a> --}}
+        <a class="navigator-item {{ Route::currentRouteName() =='fe.customer.customer.setting' ?'active':"" }}" href="{{route('fe.customer.customer.setting')}}">
+            <img width="24px" height="24px" src="{{ Theme::url('images/navigator/setting.png') }}" alt="">
+            <div class="label">{{ __('menu.setting') }}</div>
+        </a>
+    </div>
+</div>

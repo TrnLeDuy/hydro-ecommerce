@@ -1,0 +1,88 @@
+.star-rating {
+    display: inline-block;
+
+    .star {
+        font-size: 20px;
+        color: #ccc;
+        position: relative;
+        display: inline-block;
+
+        &.filled {
+            color: gold;
+        }
+
+        // Partial Star Fills (using nesting for organization)
+        &::before {
+            content: "\2605";
+            color: gold;
+            position: absolute;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            display: inline-block;
+        }
+
+        &.third::before {
+            width: 33%;
+        }
+
+        &.half::before {
+            width: 50%;
+        }
+
+        &.third-fourth::before {
+            width: 75%;
+        }
+    }
+    &.product-list-rating {
+        display: flex;
+        justify-content: center;
+        span {
+            font-size: 30px !important;
+        }
+    }
+}
+.addto-cart-box {
+    display: flex !important;
+    .clearfix {
+        .quantity-custom {
+            max-width: 135px;
+            display: flex !important;
+            border: 1px solid #dddddd;
+            border-radius: 30px;
+            height: 55px;
+            margin-bottom: 20px;
+            .input-quantity-custom {
+                display: block;
+                line-height: 53px;
+                width: 43px;
+                text-align: center;
+                padding: 0 !important;
+                box-shadow: none !important;
+                border: none;
+                font-size: 16px;
+                font-weight: 600;
+                color: #182846;
+                background: transparent;
+            }
+        }
+    }
+}
+.cart-section {
+    .group-btn-cart-custom {
+        border: 1px solid #dddddd;
+        border-radius: 30px;
+        .input-quantity-custom {
+            line-height: 53px;
+            width: 43px;
+            text-align: center;
+            padding: 0 !important;
+            box-shadow: none !important;
+            border: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: #182846;
+            background: transparent;
+        }
+    }
+}

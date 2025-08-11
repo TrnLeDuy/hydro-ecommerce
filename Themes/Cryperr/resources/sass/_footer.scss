@@ -1,0 +1,18 @@
+.footer-widget {
+  .schedule-box {
+    .list {
+      color: #ffffff;
+    }
+  }
+  &.contact-widget,
+  &.links-widget {
+    color: #ffffff;
+    .widget-title {
+      font-weight: 700;
+      font-size: 20px;
+    }
+    .widget-content {
+      font-weight: 400 !important;
+    }
+  }
+}
